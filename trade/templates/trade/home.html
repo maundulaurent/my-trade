@@ -1,0 +1,75 @@
+{% extends 'trade/base.html' %}
+
+
+{% block content %}
+<style>
+    a{
+        text-decoration: none;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 mt-5">
+            <a href="#" class="btn btn-success p-1 mb-2 btn-sm"><small>Subscribe Tickstream</small></a>
+            <a href="#" class="btn btn-success p-1 mb-2 btn-sm"><small>Unsubscribe Tickstream</small></a>
+            <a href="#" class="btn btn-success p-1 mb-2 btn-sm"><small>Get Ticks History</small></a>
+
+        </div>
+        <div class="col-7" style="background-image: url('static/images/graph1.jpg');">
+                        
+            <div>
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark fw-bold dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Volatility 100(1s) Index 
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-auto">
+                    <div class="row">
+                        <div class="col">
+                            <div class="dropdown-item"><i>Markets..</i></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="cl1">
+                            <div class="dropdown-item">
+                                <a href="#" class="btn btn-sm btn-danger mb-2"><small>Get Active Symbols</small></a><br>
+                                <a href="#" class="btn btn-sm btn-danger mb-2"><small>Get Website Status</small></a>
+                                <a href="#" class="btn btn-sm btn-danger"><small>Subscribe Proposal</small></a><br>
+                                <a href="#" class="btn btn-sm btn-danger"><small>Unsubscribe Proposal</small></a>
+                            </div>
+                        </div>
+                        <div class="cl1">
+                            <div class="dropdown-item d-flex">
+                                <a href="#" class="text-dark me-2 text-muted">Statistics</a>
+                                <a href="#" class="text-dark me-2 text-muted">Indeces</a>
+                                <a href="#" class="text-dark me-2 text-muted">Baskets</a>
+                                <a href="#" class="text-dark me-2 text-muted">Forex</a>
+                            </div>
+                        </div>
+                        <div class="cl1">
+                            <a href="#" class="btn btn-sm btn-primary mb-2 me-2"><small>Keep Alive</small></a>
+                            <a href="#" class="btn btn-sm btn-primary mb-2 me-3"><small>End Call</small></a><br>
+                            <a href="#" class="btn btn-sm btn-primary mb-2 me-3"><small>Bal Sub</small></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    
+        </div>
+        <div class="col-3 mt-5">
+            <p>Virtual Account No: </p> 
+            <p>Virtual Account Balance: </p>
+            <p>Real Account No: </p>
+            <p>Real Account Balance</p>
+            <p>Predictor 1: </p>
+            <p>Predictor 2: </p>
+            <p>Predictor 3: </p>
+            <p>Prediction % : </p>
+        </div>
+    </div>
+</div>
+<a href="logout" class="btn btn-success p-1 mb-2">Logout</a>
+
+{% endblock %}

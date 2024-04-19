@@ -1,0 +1,29 @@
+<!-- Check the derivs login page -->
+
+{% extends 'trade/base.html' %}
+
+
+{% block content %}
+
+<body>
+    <form method="post">
+        <h3>Login Form</h3>
+        {% csrf_token %}
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter username" id="username" name="username">
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter email" id="email" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" id="password" name="pass">
+
+        <button type="submit">Log In</button>
+
+
+        <a href="signup">Create an account</a>
+    </form>
+</body>
+
+{% endblock %}
